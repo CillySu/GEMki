@@ -130,7 +130,7 @@ padding-bottom: 1em;
 .mobile .card { padding-bottom: 5em; }
 
 /* Details For IMAGES */
-.mobile .card img {max-width: 100%!important; }
+.mobile .card img {max-width: 10%!important; }
 .mobile .card {margin: 0ex .3px;}
 
 #extra img { min-width: 30%; }
