@@ -18,7 +18,7 @@ curl https://i.ibb.co/B4rs5Bh/rcsi.png -o ~/Library/Application\ Support/Anki2/U
 
 I (Cillian) added animations. To find these animations if you need to modify them just search for "csAnim"
 
-I (Cillian) added code that changes the colour of text based on whether the text is underlined, bolded or italicised. To find these colours search for "csColour"
+I (Cillian) added code that changes the colour of text based on whether the text is underlined, bolded or italicised. To find these colours search for "csColours"
 
 
 ------------------------------------ COMMENTS END ------------------------------------------ */
@@ -55,7 +55,7 @@ I (Cillian) added code that changes the colour of text based on whether the text
 
 /*FONT STYLE*/  
     .card, kbd { 
-    font-family: Menlo, Baskerville } /*Step exam's font is Arial Greek*/
+    font-family: Menlo, Source Sans Pro} /*Step exam's font is Arial Greek*/
 /*MAX IMAGE HEIGHT*/
     img {max-height: none; }
  /*MAX IMAGE WIDTH*/
