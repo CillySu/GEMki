@@ -167,22 +167,22 @@ if (tagContainer.childElementCount == 0) {
 
 <script>
       function getSummaryFor(word) {
-	    word = word.replace(/^[\.,\/#\!$%\^&\*;:{}=\-_`~()\'\s]+|[\.,\/#\!$%\^&\*;:{}=\-_`~()\'\s]+$/g, "");
+      word = word.replace(/^[\.,\/#\!$%\^&\*;:{}=\-_`~()\'\s]+|[\.,\/#\!$%\^&\*;:{}=\-_`~()\'\s]+$/g, "");
              var pc = document.getElementById("popup-container");
-   	    var hc = document.getElementById("hc");
+        var hc = document.getElementById("hc");
             var tc = document.getElementById("tc");
             var ic = document.getElementById("ic");
             var imgelem = document.getElementById("popup-image");
-       	    imgelem.src = "";
+            imgelem.src = "";
             var shortsum ="";
         fetch("https://en.wikipedia.org/api/rest_v1/page/summary/" + word).then(function(response) {return response.json();}).then(function(response) {
            shortsum = response.description;
-  	   shortsum = shortsum.replace(/(Disambiguation.*)/g, "Disambiguation");
+       shortsum = shortsum.replace(/(Disambiguation.*)/g, "Disambiguation");
             tc.innerHTML = "<span id='hc'>" +capfl(shortsum) + "</span>" +"\n" +response.extract_html + "\n";
-	    tc.style.width = "420px";
+      tc.style.width = "420px";
             if (response.extract_html && !response.extract.endsWith("to:")){
-            	pc.style.display = "block";
-	        document.getElementById("open-wiki-btn").href = response.content_urls.desktop.page;
+              pc.style.display = "block";
+          document.getElementById("open-wiki-btn").href = response.content_urls.desktop.page;
             }else{pc.style.display = "none";}
             if (!response.thumbnail.source || response.type ==="disambiguation"){
                  tc.style.width = "420px";
@@ -199,12 +199,12 @@ document.addEventListener('click', function() {
     var currentSelection = getSelectionText();
     if (currentSelection !==""){prevSel = currentSelection;}
     if (currentSelection && !mustClickW ){
-    	getSummaryFor(currentSelection);
+      getSummaryFor(currentSelection);
      }else{closePopup();}
 });
 document.addEventListener('keyup', function(e) {
     if(e.key =="w"){
-	if(pcc.style.display ==="block"){closePopup();}else{getSummaryFor(prevSel);}
+  if(pcc.style.display ==="block"){closePopup();}else{getSummaryFor(prevSel);}
     }
 });
 function getSelectionText() {
@@ -230,3 +230,33 @@ function clearSelection(){
 var mustClickW = true;
 //END CUSTOMIZATION
     </script>
+    
+<div style="font-size:12px;color:#ff5555;font-family:menlo, source sans pro;
+font-style:italic;letter-spacing:0px;position:fixed;bottom:50px;
+left:5px;opacity:0.7;">
+    <div class="editcloze">
+        Ease: {{info-Factor:}} <br>
+        Card is "{{info-Review?:}}
+        {{info-New?:}}
+        {{info-Learning?:}}
+        {{info-Young:}}" <br>
+        Next Quiz: November 19th
+    </div>
+    <span id="countdown2"></span>
+    <script>
+        // ###### CUSTOMIZE DATE HERE ######
+        var dateText= 'November 19 2021';
+        var now = new Date().getTime();
+        var targetDate= new Date(dateText).getTime();
+        var dist = targetDate- now;
+        var days = ((dist / (1000 * 60 * 60 * 24))/30).toFixed(1);
+        document.getElementById('countdown2').innerHTML = days;
+    </script>m (<span id="countdown"></span>
+    <script>
+        var now = new Date().getTime();
+        var targetDate= new Date(dateText).getTime();
+        var dist = targetDate- now;
+        var days = Math.ceil(dist / (1000 * 60 * 60 * 24));
+        document.getElementById('countdown').innerHTML = days;
+    </script>d)
+</div>
