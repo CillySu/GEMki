@@ -1,6 +1,6 @@
 ## GEMki
 
-GEMki is a *Note Style* for [Anki](http://ankiweb.net), the digital spaced-repetition flashcard software. The note style was originally developed for use by the  graduate-entry medical students at the Royal College of Surgeons in Ireland '25. The note style can be thought of as a cross between the note style of [Anking's premade USMLE deck](https://www.ankipalace.com/step-1-deck) as well as MarlinAnatomy's deck, with some of our own influence too. Some added features of GEMki include:
+GEMki is a *Note Style* for [Anki](https://apps.ankiweb.net/), the digital spaced-repetition flashcard software. The note style was originally developed for use by the  graduate-entry medical students at the Royal College of Surgeons in Ireland '25. The note style can be thought of as a cross between the note style of [Anking's premade USMLE deck](https://www.ankipalace.com/step-1-deck) as well as MarlinAnatomy's deck, with some of our own influence too. Some added features of GEMki include:
 
 - Fade in animations, which makes transitioning between cards less jarring
 - A colour scheme which automatically colours text as **bold**, _italic_ or underlined
