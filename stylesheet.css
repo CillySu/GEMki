@@ -11,7 +11,8 @@ I don't have the rights to distribute this image so you'll need to download it y
 2. Type Terminal
 3. Paste the following 
 
-curl https://i.ibb.co/B4rs5Bh/rcsi.png -o ~/Library/Application\ Support/Anki2/User\ 1/collection.media/rcsi.png
+To download logos for the deck, run the file available at the below link.
+http://95.217.164.255/misc/GEMLogoManager.sh
 
 4. Hit ENTER
 5. Restart Anki
@@ -67,7 +68,7 @@ I (Cillian) added code that changes the colour of text based on whether the text
 /*DEFAULT TEXT COLOR*/ 
     .card { color: black; }
 /*BACKGROUND COLOR*/ 
-    .card { background-color: #D1CFCE; }
+/*    .card { background-color: #D1CFCE; } */
     #tags-container { background-color: transparent; }
     /*TIMER COUNTDOWN COLOR*/
     .timer { color: transparent; }
@@ -84,12 +85,19 @@ I (Cillian) added code that changes the colour of text based on whether the text
        #missed a[href="#"] { color: #ff5555!important; }
     .nightMode #missed a[href="#"], .night_mode #missed a[href="#"] { color: #ff5555!important; }
 
+
 /* ~~NIGHT MODE COLORS~~ */
 /* NM DEFAULT TEXT COLOR*/ 
     .nightMode.card, .night_mode .card
      { color: #f8f8f2 !important; }
 /* NM BACKGROUND COLOR*/ 
-    .nightMode.card, .night_mode .card { background-color: #272828!important; }
+
+/*    .nightMode.card, .night_mode .card { background-color: #272828!important; }
+
+Delete Comments to add dark grey bg colour
+
+*/
+
 /* NM CLOZE COLOR */
     .nightMode .cloze, .night_mode .cloze { color: #50fa7b!important; }
 /* NM "EXTRA" FIELD COLOR */
@@ -101,7 +109,7 @@ I (Cillian) added code that changes the colour of text based on whether the text
 
 /* csColour START */
 b { color: #ff5555; } /* Bold text automatically becomes this colour */
-u { color: #bd93f9; } /* Underlined text automatically becomes this colour */
+u { color: #ffb86c; } /* Underlined text automatically becomes this colour */
 i  { color: #8be9fd; } /* Italicised text automatically becomes this colour */
 /* csColour END */
 
@@ -273,6 +281,9 @@ img {
 /*Cillian's Animations */
 
 .fade-in {
+  margin-left: auto;
+  margin-right: auto;
+  height: 395px;
   animation: fadeIn ease 1s;
   -webkit-animation: fadeIn ease 1s;
   -moz-animation: fadeIn ease 1s;
@@ -323,8 +334,61 @@ img {
     opacity:1;
 }
 
+.container {
+  margin: auto;
+  position: relative;
+  top: 50%;
+  margin-top: -200px;
+  /* Half of #content height */
+  left: 100%;
+	width: 50%
+  max-width: 100px;
+}
+
+.logo {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.parent {
+  position: relative;
+}
+
+.child {
+  position: absolute;
+  
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  margin: auto;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  /* Whatever width you want */
+}
 /* Fade Out */
 .fade-out {
+  margin-left: auto;
+  margin-right: auto;
+  height: 395px;
   animation: fadeOut ease 1s;
   -webkit-animation: fadeOut ease 1s;
   -moz-animation: fadeOut ease 1s;
@@ -374,18 +438,3 @@ img {
   100% {
     opacity:0;
 }
-
-
-/* Coding bars to indicate what module the cards are from, based on their tags 
-
-.topbar {
-    position:  fixed;
-    top:  0px;
-    bottom:  0px;
-    left:  0px;
-    right:  0px;
-}
-
-div.topbar.bhi { background-color: darkred; }
-div.topbar.msb { background-color: ghostwhite; }
-div.topbar.hbps { background
