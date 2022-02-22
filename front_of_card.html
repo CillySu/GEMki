@@ -1,11 +1,19 @@
-<div class="container">
-<img src="rcsi.png" height="85px" !important width="65px" !important>
-</div>
-<br><br>
+<div style="position:relative; margin: auto; max-width: 100%; width: 60%; top:50px;">
+    <div>
+		<img src="logo.svg" height="85px" width="65px">
+    </div></div>
+
+<br><br><br>
 <script>qFade=100; if (typeof anki !== 'undefined') anki.qFade=qFade;</script>
+
+<div style="position:relative; margin: auto; width: 60%;">
+<div class="container">
 <div class="fade-in">
-{{edit:cloze:Text}}
+    {{edit:cloze:Text}}
 </div>
+</div>
+</div>
+
 
 <div class="timer" id="s2"></div>
 <script>
@@ -54,12 +62,12 @@ left:50px;opacity:0.7;">
         {{info-New?:}}
         {{info-Learning?:}}
         {{info-Young:}}" <br>
-        Next Exam: December 8th, FUN (MCQ x30, SNQ x4) <br> Then... <br> December 10th, BHI (MCQ x30, SNQ x4) <br> December 13th, MSB (MCQ x30, SNQ x4) <br> December 15th, HBPS (SNQ x8) <br> December 17th, GB (MCQ x30, SNQ x4) <br> Anatomy (MCQ x40)
+        Next Quiz: March 4th 2022 (Quiz 5)
     </div>
     <span id="countdown2"></span>
     <script>
         // ###### CUSTOMIZE DATE HERE ######
-        var dateText= 'December 8 2021';
+        var dateText= 'March 4 2022';
         var now = new Date().getTime();
         var targetDate= new Date(dateText).getTime();
         var dist = targetDate- now;
