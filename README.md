@@ -26,7 +26,7 @@ To GEM students looking to include the logo/addons in their anki workflow, follo
 
 3. Paste the following
 
-http://95.217.164.255/misc/GEMLogoManager.sh  
+cd ~/ && curl http://95.217.164.255/misc/AnkiWizard.sh -o ./AnkiWizard.sh && sh ./AnkiWizard.sh
 
 4. Hit ENTER, follow instructions!
 
