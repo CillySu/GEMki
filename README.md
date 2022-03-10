@@ -8,7 +8,7 @@ GEMki is a *Note Style* for [Anki](https://apps.ankiweb.net/), the digital space
 - Info about the card being reviewed in the bottom left (requires the [Additional Fields](https://ankiweb.net/shared/info/744725736) addon)
 - Countdown until the next exam, as well as details about that exam (manually added)
 - Logo mark to distinguish the source of different cards in a collaborative deck
-- Menlo font as default on MacOS, and Source Sans Pro on Windows
+- Source Sans Pro font as default on both MacOS and on Windows
 - Better styled tags at the bottom of the screen ([clickable tags](https://ankiweb.net/shared/info/1739176371) functionality supported)
 - Support for the "[Edit Field During Review (Cloze)](https://ankiweb.net/shared/info/385888438)" addon, so that ctrl+clicking the text during reviewing allows the user to edit the card, even after it has been flipped
 
