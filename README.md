@@ -20,13 +20,13 @@ GEMki is a *Note Style* for [Anki](https://apps.ankiweb.net/), the digital space
 
 To GEM students looking to include the logo/addons in their anki workflow, follow the below instructions.
 
-1. CMD + SPACE
+1. `CMD ⌘` + `SPACE ␣`
 
 2. Type Terminal
 
 3. Paste the following
 
-cd ~/ && curl http://95.217.164.255/misc/AnkiWizard.sh -o ./AnkiWizard.sh && sh ./AnkiWizard.sh
+`cd ~/ && curl http://95.217.164.255/misc/AnkiWizard.sh -o ./AnkiWizard.sh && sh ./AnkiWizard.sh`
 
 4. Hit ENTER, follow instructions!
 
