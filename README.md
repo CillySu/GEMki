@@ -15,7 +15,8 @@ GEMki is a *Note Style* for [Anki](https://apps.ankiweb.net/), the digital space
 ## Gallery
 
 ![Default Source Sans Pro font on Windows, custom navy background](https://i.imgur.com/i75RINh.png)
-![Default Menlo font on MacOS, custom purple background](https://preview.redd.it/98kvjsfelci81.jpg?width=1280&format=pjpg&auto=webp&s=2eb453000e6cfaa9939cefb516be5c75308b4341)![Fade-in animations between cards](https://i.imgur.com/cEYru3j.gif)
+
+![Fade-in animations between cards](https://i.imgur.com/cEYru3j.gif)
 
 
 To GEM students looking to include the logo/addons in their anki workflow, follow the below instructions.
